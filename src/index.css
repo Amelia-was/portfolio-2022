@@ -38,6 +38,7 @@ h1 {
 
 header {
   background: var(--accent1);
+  padding: 20px;
 }
 
 /* end of header */
@@ -55,7 +56,8 @@ main {
 /* about */
 
 .about {
-  max-width: 500px;
+  max-width: 800px;
+  padding: 50px;
 }
 
 .about-text {
