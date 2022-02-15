@@ -113,4 +113,15 @@ footer {
   width: 100%;
 }
 
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: center;
+}
+
+footer li {
+  padding: 20px;
+}
+
 /* end of footer */

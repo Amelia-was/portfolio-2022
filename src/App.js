@@ -2,18 +2,16 @@ import React, { useState } from 'react';
 import About from './components/About';
 import Nav from './components/Nav';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  const navLinks = ['About', 'Portfolio', 'Contact'];
+  const navLinks = ['About', 'Portfolio'];
   const [currentPage, setCurrentPage] = useState(navLinks[0]);
 
   const renderPage = () => {
     switch (currentPage) {
       case 'Portfolio':
         return <Portfolio />;
-      case 'Contact':
-        return <Contact />;
       default:
         return <About />;
     }
@@ -35,9 +33,7 @@ function App() {
         {renderPage()}
       </main>
 
-      <footer>
-        stuff
-      </footer>
+      <Footer />
 
     </section>
   );
