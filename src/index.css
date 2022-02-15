@@ -13,11 +13,76 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--main);
   color: var(--text);
 }
+
+.page {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Cormorant', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 64px;
+  color: var(--white);
+}
+
+/* header */
+
+header {
+  background: var(--accent1);
+}
+
+/* end of header */
+
+/* main */
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* end of main */
+
+/* about */
+
+.about {
+  max-width: 500px;
+}
+
+.about-text {
+  font-size: 36px;
+}
+
+/* end of about */
+
+/* contact */
+
+
+
+/* end of contact */
+
+/* portfolio */
+
+
+
+/* end of portfolio */
+
+/* footer */
+
+footer {
+  background: var(--accent2);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* end of footer */
