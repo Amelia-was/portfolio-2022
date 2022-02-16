@@ -29,7 +29,7 @@ function App() {
         />
       </header>
 
-      <main>
+      <main className='flex row justify-center'>
         {renderPage()}
       </main>
 

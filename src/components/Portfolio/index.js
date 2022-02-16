@@ -44,7 +44,7 @@ function Portfolio() {
     return (
         <section className='portfolio-container justify-center'>
             {apps.map((app, i) =>
-                <Project name={app.name} index={(apps.length - i - 1)} altRepo={app.altRepo} altURL={app.altURL} notDeployed={app.notDeployed} featured={app.featured} />
+                <Project name={app.name} index={(apps.length - i - 1)} altRepo={app.altRepo} altURL={app.altURL} featured={app.featured} />
             )}
         </section>
     );

@@ -6,12 +6,12 @@ function Footer() {
         <footer>
             <ul>
                 <li>
-                    <a href='https://www.linkedin.com/in/amelia-wasowski/' target='_blank'>
+                    <a href='https://www.linkedin.com/in/amelia-wasowski/' target='_blank' rel='noreferrer'>
                         <BsLinkedin />
                     </a>
                 </li>
                 <li>
-                    <a href='https://www.github.com/amelia-was/' target='_blank'>
+                    <a href='https://www.github.com/amelia-was/' target='_blank' rel='noreferrer'>
                         <BsGithub />
                     </a>
                 </li>
