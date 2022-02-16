@@ -1,7 +1,44 @@
 import React from 'react';
 import { toURL } from '../../utils/helpers';
+import { SiHtml5, SiCss3, SiJavascript, SiJquery, SiMysql, SiMongodb, SiGraphql, SiPython, SiFlask, SiNodedotjs, SiHandlebarsdotjs, SiSass, SiBulma, SiBootstrap, SiReact } from "react-icons/si";
 
-function Project({ name, altURL, altRepo, featured, index }) {
+function pickIcon(tech) {
+    switch(tech) {
+        case 'html':
+            return <SiHtml5 />;
+        case 'css':
+            return <SiCss3 />;
+        case 'js':
+            return <SiJavascript />;
+        case 'jq':
+            return <SiJquery />;
+        case 'pyt':
+            return <SiPython />;
+        case 'node':
+            return <SiNodedotjs />;
+        case 'flask':
+            return <SiFlask />;
+        case 'mysql':
+            return <SiMysql />;
+        case 'mongo':
+            return <SiMongodb />;
+        case 'graphql':
+            return <SiGraphql />;
+        case 'hbrs':
+            return <SiHandlebarsdotjs />;
+        case 'sass':
+            return <SiSass />;
+        case 'bulma':
+            return <SiBulma />;
+        case 'bs':
+            return <SiBootstrap />;
+        case 'react':
+            return <SiReact />;
+    }
+
+}
+
+function Project({ name, altURL, altRepo, featured, index, tech }) {
     return (
         <div className={(featured && `featured`) || `portfolio-img-container`}>
 
@@ -27,7 +64,11 @@ function Project({ name, altURL, altRepo, featured, index }) {
             <img
                 className='portfolio-img'
                 src={require(`../../assets/imgs/apps/app-${index}.png`)}
-                alt={`Screenshot of ${name}`} />
+                alt={`Screenshot of ${name}`} 
+            />
+            <div className='project-footer'>
+                {tech.map(str => pickIcon(str))}
+            </div>
         </div>
     );
 };
