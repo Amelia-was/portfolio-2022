@@ -20,7 +20,7 @@ function App() {
   return (
     <section className='flex column justify-between align-center'>
 
-      <header className='flex row justify-between align-center'>
+      <header className='flex row justify-between align-center sm-justify-center'>
         <h1>Amelia Wasowski</h1>
         <Nav
           navLinks={navLinks}
