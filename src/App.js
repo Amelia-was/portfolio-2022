@@ -18,10 +18,10 @@ function App() {
   }
 
   return (
-    <section className='page'>
+    <section className='flex column justify-between align-center'>
 
-      <header>
-        <h1>amelia wasowski</h1>
+      <header className='flex row justify-between align-center'>
+        <h1>Amelia Wasowski</h1>
         <Nav
           navLinks={navLinks}
           currentPage={currentPage}
@@ -29,7 +29,7 @@ function App() {
         />
       </header>
 
-      <main className='flex row justify-center'>
+      <main className='flex row justify-center align-center align-content-center'>
         {renderPage()}
       </main>
 

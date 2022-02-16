@@ -19,7 +19,7 @@ function Portfolio() {
             name: 'Swatch',
             altRepo: 'https://github.com/Project-Two-Group-Nine/SWATCH',
             altURL: 'https://swatch-makeup-reviews.herokuapp.com/',
-            tech: ['html', 'css', 'js', 'node', 'mysql',  'hbrs', 'sass']
+            tech: ['html', 'css', 'js', 'node', 'mysql',  'hbrs']
         },
         {
             name: 'Tech Blog',

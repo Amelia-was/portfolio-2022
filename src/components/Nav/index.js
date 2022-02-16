@@ -5,11 +5,12 @@ function Nav(props) {
 
     return (
        <nav>
-           <ul>
+           <ul className='flex row'>
                 {navLinks.map(link => (
-                    <li key={link}>
+                    <li 
+                        key={link}
+                        className={`${currentPage === link && 'navActive'}`}>
                         <h2
-                            // className={`nav-link ${currentPage === link && 'navActive'}`}
                             onClick={() => {
                                 setCurrentPage(link)
                             }}>{link}</h2>

@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin, BsFillEnvelopeFill } from "react-icons/bs";
 function Footer() {
     return (
         <footer>
-            <ul>
+            <ul className='flex row justify-center'>
                 <li>
                     <a href='https://www.linkedin.com/in/amelia-wasowski/' target='_blank' rel='noreferrer'>
                         <BsLinkedin />
