@@ -3,6 +3,7 @@ import About from './components/About';
 import Nav from './components/Nav';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import { Cube } from 'react-preloaders';
 
 function App() {
   const navLinks = ['About', 'Portfolio'];
@@ -26,7 +27,7 @@ function App() {
           navLinks={navLinks}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
-        />
+          />
       </header>
 
       <main className='flex row justify-center align-center align-content-center'>
@@ -34,7 +35,7 @@ function App() {
       </main>
 
       <Footer />
-
+      
     </section>
   );
 }
