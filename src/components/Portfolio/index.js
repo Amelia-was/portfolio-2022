@@ -5,7 +5,7 @@ function Portfolio() {
     const [apps] = useState([
         {
             name: 'BookEnd',
-            altURL: 'http://bookend-recommendations.herokuapp.com/',
+            altURL: 'http://bookend-site.herokuapp.com/',
             altRepo: 'https://github.com/project3UOT/bookend',
             tech: ['html', 'css', 'js', 'node', 'graphql', 'mongo', 'bulma', 'sass'],
             featured: true
